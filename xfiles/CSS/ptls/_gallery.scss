@@ -1,0 +1,36 @@
+.gallery-wrapper {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+}
+
+.gallery-item {
+	list-style: none;
+	width: 33.3%;
+	img {
+		width: 100%;
+		display: block;
+	}
+}
+
+@media (max-width: 940px) {
+	.gallery-item {
+		width: 50%;
+	}
+}
+
+
+@media (max-width: 768px) {
+	
+}
+
+@media (max-width: 480px) {
+	.gallery-item {
+		width: 100%;
+	}
+}

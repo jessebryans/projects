@@ -1,0 +1,189 @@
+@import "partials/setup";
+@import "partials/button";
+
+// some default styles
+
+html {
+	text-align: center;
+	color: $orange;
+	font-family: "Quicksand";
+	letter-spacing: 1px;
+}
+
+body {
+	background: #efefef;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+}
+
+main {
+	padding: 20px;
+}
+
+label {
+	cursor: pointer;
+}
+
+// header styles
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+	background: $orange;
+	color: white;
+
+	.socialContainer a {
+		letter-spacing: 5px;
+		color: white;
+		font-size: 20px;
+		transition: all .3s ease-out;
+
+		&:hover, &:focus {
+			color: $cyan;
+		}
+	}
+}
+
+h1 {
+	text-transform: uppercase;
+}
+
+// main page styles
+
+input[type="radio"] {
+	display: none;
+}
+
+// flexbox the preselected shows
+.animeContainer {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+}
+
+// transition for the hover and active states
+.animeContent {
+	transition: all .3s ease;
+	background: white;
+	border: 2px solid gray;
+	border-radius: 5px;
+	margin-bottom: 30px;
+}
+
+// hover and active states
+.animeContent:hover, .active {
+	transform: scale(1.1);
+	border-color: black;
+	color: $yellow;
+}
+
+.animeContent img {
+	width: 400px;
+	height: 300px;
+	display: block;
+}
+
+// default style of the popup containing the description of show and the options to move foreward
+.popupContainer {
+	// position: fixed;
+	display: none;
+	width: 800px;
+	max-width: 100%;
+	left: 50%;
+	top: 50%;
+	// transform: translate(-50%, -50%);
+	background: rgba(0,0,0,0.8);
+	color: white;
+	padding: 50px;
+	// transition: all .4s ease;
+}
+
+// Class created to remove background when user selects 'interested'
+.popupColor {
+	background: transparent;
+}
+
+// the 'pick one' thing
+.pick {
+	font-size: 20px;
+}
+
+// where the randomly selected show will appear
+.randomContainer {
+	width: 80%;
+	// height: 500px;
+	margin: 0 auto;
+	// overflow: hidden;
+	position: relative;
+
+	img {
+		width: 100%;
+		// height: 500px;
+		object-position: center;
+		margin-bottom: 20px;
+	}
+
+	// the "underline"
+	&:before {
+		content: '';
+		position: absolute;
+		margin: 0 auto;
+		width: 200px;
+		height: 2px;
+		bottom: -30px;
+		left: 0;
+		right: 0;
+		opacity: 0;
+		background: $yellow;
+	}
+
+	// opacity mainly for the before element "underline"
+	&.opacity:before {
+		opacity: 1;
+	}
+}
+
+.learnMore {
+	margin-top: 20px;
+	display: inline-block;
+	transition: all .3s ease;
+
+	&:hover, &:focus {
+		color: $brown;
+		font-weight: bold;
+	}
+}
+
+// loadie, the load bar
+.loadie {
+	z-index: 9999;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: $cyan;
+	height: 4px;
+	width: 0;
+	transition: width 1s ease-out;
+}
+
+// media queries
+@media all and (max-width: 580px) {
+	header {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	// .randomContainer {
+	// 	max-width: 100%;
+	// }
+}

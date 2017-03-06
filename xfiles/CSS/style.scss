@@ -1,0 +1,13 @@
+@import "ptls/setup";
+@import "ptls/variables";
+@import "ptls/header";
+@import "ptls/gallery";
+@import "ptls/footer";
+
+.wrapper {
+	max-width: $wrapperWidth;
+	margin: 0 auto;
+}
+
+
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Anime Suggester</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="styles/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>Get Recommended an Anime!!!!</h1>
+
+		<!-- social media stuff -->
+		<div class="socialContainer">
+
+				<a href="https://twitter.com/thisisJessHo"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-grav" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a>
+
+		</div>
+	</header>
+
+<!-- IMAGES ARE 400 X 300  -->
+
+	<main>
+		<div>
+			<p class="pick">Pick one:</p>
+			<form action="">
+
+			<!-- where randomly selected shows will appear -->
+			<div class="randomContainer"></div>
+
+				<!-- first page of preselected shows -->
+				<div class="animeContainer">
+
+					<div class="animeContent">
+						<label for="anime1"><h2>Dragonball Z</h2>
+						<img src="http://egmnowbeta.s3-us-west-2.amazonaws.com/wp-content/uploads/2015/02/17230022/DBZ_Header.jpg" alt=""></label>
+						<input type="radio" name="chooseAnime" id="anime1" value="dbz">
+					</div>
+
+					<div class="animeContent">
+						<label for="anime2"><h2>Pokemon</h2>
+						<img src="http://pixelvulture.com/wp-content/uploads/2016/07/Poke%CC%81mon-TV-Show.jpg" alt=""></label>
+						<input type="radio" name="chooseAnime" id="anime2" value="pokemon">
+					</div>
+
+					<div class="animeContent">
+						<label for="anime3"><h2>Sailor Moon</h2>
+						<img src="http://www.animenewsnetwork.com/images/encyc/A363-1543286731.1411119328.jpg" alt=""></label>
+						<input type="radio" name="chooseAnime" id="anime3" value="sailor">
+					</div>
+
+					<div class="animeContent">
+						<label for="anime4"><h2>Gundam Wing</h2>
+						<img src="http://static.zerochan.net/Mobile.Suit.Gundam.Wing.full.39730.jpg" alt=""></label>
+						<input type="radio" name="chooseAnime" id="anime4" value="gundam">
+					</div>
+
+					<div class="animeContent">
+						<label for="anime5"><h2>Attack on Titan</h2>
+						<img src="https://screenshots.en.sftcdn.net/en/scrn/69701000/69701687/attack-on-titan-tribute-game-03-700x393.jpg" alt=""></label>
+						<input type="radio" name="chooseAnime" id="anime5" value="titan">
+					</div>
+
+					<!-- where preselected shows' descriptions will appear -->
+					<div class="popupContainer">
+						<div class="summary"></div>
+						<div class="buttonContainer">
+							<button class="draw" name="interested">Interested</button>
+							<button class="draw" name="startOver">Start Over</button>
+						</div>
+					</div>
+				</div>
+
+			</form>
+		</div>
+	</main>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+	<!-- loading the load bar plugin -->
+  <script src="jquery.loadie.min.js"></script>
+
+	<!-- main js file -->
+	<script src="script.js"></script>
+</body>
+</html>

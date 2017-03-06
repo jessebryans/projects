@@ -1,0 +1,56 @@
+header {
+	background-image: url(../images/hero.jpg);
+	height: 100vh;	
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.headerLogo {
+	text-align: center;
+	margin: auto;
+	padding-top: 110px;
+}
+
+.headerLogo img {
+	display: flex;
+	flex-direction: column;
+	margin:auto;
+	max-width: 75%;
+	
+}
+
+.headerLogo img:first-child {
+	max-width: 25%;
+}
+
+.headerLogo h3 {
+	color: $white;
+	font-family: $raleway;
+}
+
+
+.circleText {
+	background-image: 	url(../assets/circle.png);
+	background-repeat: 	no-repeat;	
+	background-position: center center;
+	background-size: contain;
+	font-family: $raleway;
+	position: relative;
+	padding: 80px;
+	text-align: center;
+	top: 80px;
+	color:$white;
+	}
+
+.hamburgerMenu {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 20px 20px 0 0;
+	:hover {
+		color:$orange;
+	}
+}	
+
